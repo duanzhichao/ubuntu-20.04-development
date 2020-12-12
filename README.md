@@ -11,10 +11,10 @@ sudo apt-get install git git-gui
 ```
 
 ### 3. 下载erlang和elixir的安装包, 其他版本[可点击此链接下载](https://www.erlang-solutions.com/)
-- [erlang]()
-- [elxir]()
+- [erlang](https://github.com/duanzhichao/ubuntu_20.04_development/releases/download/erlang-esl_23.1-1_ubuntu_focal_amd64.deb/erlang-esl_23.1-1_ubuntu_focal_amd64.deb)
+- [elxir](https://github.com/duanzhichao/ubuntu_20.04_development/releases/download/elixir_1.11.2-1_ubuntu_focal_all.deb/elixir_1.11.2-1_ubuntu_focal_all.deb)
 
-### 4. 安装erlang和elixir   
+### 4. 安装erlang和elixir
 
 ```shell
 sudo apt-get dpkg -i ./erlang...
