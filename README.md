@@ -62,7 +62,7 @@ sudo npm install -g webpack
 
 ### 9.设置hex和mix的cdn
 ```shell
-export HEX_MIRROR="	https://cdn.jsdelivr.net/hex"
+export HEX_MIRROR="https://cdn.jsdelivr.net/hex"
 export HEX_CDN="https://hexpm.upyun.com"
 ```
 
