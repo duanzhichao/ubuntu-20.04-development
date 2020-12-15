@@ -4,9 +4,10 @@
 
 ### 1. 首先在设置里的软件和更新的源更换为阿里云
 
-### 2. 安装git/git-gui
+### 2. 安装terminator/git/git-gui
 
 ```shell
+sudo apt-get install terminator
 sudo apt-get install git git-gui
 ```
 
