@@ -7,8 +7,8 @@
 ### 2. 安装terminator/git/git-gui
 
 ```shell
-sudo apt-get install terminator
-sudo apt-get install git git-gui
+sudo apt-get install -y terminator
+sudo apt-get install -y git git-gui
 ```
 
 ### 3. 下载erlang和elixir的安装包, 其他版本[可点击此链接下载](https://www.erlang-solutions.com/)
@@ -35,7 +35,7 @@ sudo apt-get update
 
 sudo apt-get -y install postgresql
 
-sudo apt-get install pgadmin4
+sudo apt-get -y install pgadmin4
 ```
 
 ### 6. 设置postgresql的密码
@@ -49,14 +49,14 @@ exit
 
 ### 7. 安装curl
 ```shell
-sudo apt-get install curl
+sudo apt-get -y install curl
 ```
 
 ### 8. 安装nodejs14
 ```shell
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
-sudo apt-get install nodejs
+sudo apt-get -y install nodejs
 
 sudo npm install -g webpack
 ```
