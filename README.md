@@ -69,7 +69,7 @@ export HEX_CDN="https://hexpm.upyun.com"
 
 ### 9.安装elixir和pheonix相关插件
 ```shell
-mix archive.install hex phx_new 1.5.7
+mix archive.install hex phx_new 1.6.0
 mix local.hex --force
 mix local.rebar --force
 ```
