@@ -11,7 +11,7 @@ sudo apt-get install -y terminator
 sudo apt-get install -y git git-gui
 ```
 
-### 3. 下载erlang和elixir的安装包, 其他版本[可点击此链接下载](https://www.erlang-solutions.com/)
+### 3. 下载erlang和elixir的安装包, 其他版本[可点击此链接下载](https://www.erlang-solutions.com/downloads/)
 - [erlang](https://github.com/duanzhichao/ubuntu_20.04_development/releases/download/erlang-esl_23.1-1_ubuntu_focal_amd64.deb/erlang-esl_23.1-1_ubuntu_focal_amd64.deb)
 - [elxir](https://github.com/duanzhichao/ubuntu_20.04_development/releases/download/elixir_1.11.2-1_ubuntu_focal_all.deb/elixir_1.11.2-1_ubuntu_focal_all.deb)
 
@@ -24,7 +24,7 @@ sudo dpkg -i ./elixir...
 sudo apt-get install inotify-tools
 ```
 
-### 5. 安装postgresql和pgadmin4
+### 5. 安装postgresql和pgadmin4，如果源没有release文件，可[点击此链接现在对应安装deb包](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/focal/dists/pgadmin4/main/binary-amd64/)
 
 ```shell
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
