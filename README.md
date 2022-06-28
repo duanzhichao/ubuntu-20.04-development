@@ -63,7 +63,7 @@ sudo apt-get -y install curl
 
 ### 7. 安装nodejs14
 ```shell
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 sudo apt-get -y install nodejs
 
