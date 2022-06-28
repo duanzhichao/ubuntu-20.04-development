@@ -61,9 +61,9 @@ exit
 sudo apt-get -y install curl
 ```
 
-### 7. 安装nodejs14
+### 7. 安装nodejs17
 ```shell
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 
 sudo apt-get -y install nodejs
 
