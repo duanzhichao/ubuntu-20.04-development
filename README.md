@@ -54,6 +54,7 @@ psql
 ALTER USER postgres WITH PASSWORD 'postgres';
 \q
 exit
+```
 
 ### 6. 添加普通用户权限,root或hitb
 ```shell
