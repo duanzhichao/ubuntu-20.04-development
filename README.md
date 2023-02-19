@@ -11,7 +11,7 @@ sudo apt-get install -y terminator
 
 sudo apt-get install -y git git-gui
 ```
-### 3.安装erlang和elixir,两种安装方式
+### 3.安装erlang和elixir,两种安装方式,任选一样
 #### 3.1. 安装包(新版本可能有部分问题，1.13以后), 其他版本[可点击此链接下载](https://www.erlang-solutions.com/downloads/)
 - [erlang](https://github.com/duanzhichao/ubuntu_20.04_development/releases/download/erlang-esl_23.1-1_ubuntu_focal_amd64.deb/erlang-esl_23.1-1_ubuntu_focal_amd64.deb)
 - [elxir](https://github.com/duanzhichao/ubuntu_20.04_development/releases/download/elixir_1.11.2-1_ubuntu_focal_all.deb/elixir_1.11.2-1_ubuntu_focal_all.deb)
@@ -42,7 +42,7 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 
 sudo apt-get update
 
-sudo apt-get -y install postgresql
+sudo apt-get -y install postgresql-12
 
 sudo apt-get -y install pgadmin4
 ```
@@ -54,30 +54,39 @@ psql
 ALTER USER postgres WITH PASSWORD 'postgres';
 \q
 exit
+
+### 6. 添加普通用户权限,root或hitb
+```shell
+sudo su postgres
+psql
+create user <user-name> with password '123456;
+alter role <user-name> superuser;
+\q
+exit
 ```
 
-### 6. 安装curl
+### 7. 安装curl
 ```shell
 sudo apt-get -y install curl
 ```
 
-### 7. 安装nodejs16
+### 8. 安装nodejs16
 ```shell
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 
 sudo apt-get -y install nodejs
 
-sudo npm install -g webpack
+sudo npm install -g webpack pnpm yarn 
 ```
 
-### 8.设置hex和mix的cdn
+### 9.设置hex和mix的cdn
 ```shell
 export HEX_MIRROR="https://cdn.jsdelivr.net/hex"
 
 export HEX_CDN="https://hexpm.upyun.com"
 ```
 
-### 9.安装elixir和pheonix相关插件
+### 10.安装elixir和pheonix相关插件
 ```shell
 mix archive.install hex phx_new 1.6.0
 
