@@ -60,7 +60,7 @@ exit
 ```shell
 sudo su postgres
 psql
-create user <user-name> with password '123456;
+create user <user-name> with password '123456';
 alter role <user-name> superuser;
 \q
 exit
